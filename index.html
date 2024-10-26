@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey from MYTRIP</h1>
+      <p id="descrition">Thank you for helping us to improve your trip!!!</p>
+    </header>
+    <div class="container">
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <!--Personal details section-->
+
+          <label id="name-label">Name:</label>
+          <input
+            type="text"
+            size="56"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your email"
+            size="56"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label">Mobile:</label>
+          <input
+            type="number"
+            id="number"
+            pattern="\d*"
+            max="10" min="1"
+            placeholder="Enter Your mobile number"
+            size="55"
+            required
+          />
+        </div>
+
+        <!--End of personal details section-->
+        <!--Select section-->
+        <div class="form-group">
+          <p id="question">1.How often do you travel per year?</p>
+          <select name="role" id="dropdown" class="formcontrol" required>
+            <option value="" selected disabled>Select</option>
+            <option value="">Once a year</option>
+            <option value="">2-3 times a year</option>
+            <option value="">4-6 times a year</option>
+            <option value="">More than 6 times a year</option>
+          </select>
+        </div>
+        <!--End of select section-->
+
+        <!--Radio button section-->
+        <div class="form-group">
+          <p id="question">2.Which type of destination do you prefer?</p>
+          <label>
+            <input
+              type="radio"
+              name="name"
+              value="beach"
+              class="input radio"
+              checked
+            />
+            Beach
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="name"
+              value="beach"
+              class="input radio"
+              checked
+            />
+            City
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="name"
+              value="beach"
+              class="input radio"
+              checked
+            />
+            Mountains
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="name"
+              value="beach"
+              class="input radio"
+              checked
+            />
+            CountrySide
+          </label>
+          <br />
+          <label>
+            <input
+              type="radio"
+              name="name"
+              value="beach"
+              class="input radio"
+              checked
+            />
+            Cultural
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="name"
+              value="beach"
+              class="input radio"
+              checked
+            />
+            Adventure
+          </label>
+        </div>
+        <!--End of radio button section-->
+
+        <!--Checkbox section-->
+        <div class="form-group">
+          <p id="question">
+            3.Which of the following factors are most important when choosing a
+            travel destination?(Select all that apply)
+          </p>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="checkbox"
+              value="cost"
+            />
+            Cost
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="checkbox"
+              value="weather"
+            />
+            Weather
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="checkbox"
+              value="activities"
+            />
+            Activities
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="checkbox"
+              value="safety"
+            />
+            Safety
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="checkbox"
+              value="culture"
+            />
+            Culture
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="checkbox"
+              value="food"
+            />
+            Food
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="checkbox"
+              value="nightlife"
+            />
+            Nightlife
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="checkbox"
+              value="shopping"
+            />
+            Shopping
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="checkbox"
+              value="others"
+            />
+            Others
+          </label>
+        </div>
+        <!--End of checkbox section-->
+        <!--Feedback section-->
+        <div class="form-group">
+          <p id="questions">Give us your feedback</p>
+          <textarea
+            name="feedback"
+            placeholder="Tell us your feedback!!!"
+            id="feedback"
+            rows="4"
+            cols="30"
+            class="textarea"
+          ></textarea>
+        </div>
+        <!--End of feedback section-->
+        <!--submit button section-->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit">Submit</button>
+        </div>
+        <!--End of submit button section-->
+      </form>
+    </div>
+  </body>
+</html>
